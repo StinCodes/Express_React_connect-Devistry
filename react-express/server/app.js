@@ -7,6 +7,8 @@ app.listen(PORT, ()=>{
   console.log(`Server started at ${PORT}`)
 })
 
+app.use(express.static('build'))
+
 const items = [
   {
     name: 'Laptop',
